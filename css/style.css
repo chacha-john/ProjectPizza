@@ -1,0 +1,29 @@
+/* CSS Reset and universal settings*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:hover, a:active,a:focus,a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Body */
+body{
+    background-image: url("../assets/background.jpeg");
+    background-size: cover;
+    background-position: center,left;
+    background-repeat: no-repeat;
+    color: white;
+}
+/* Navbar */
+nav{
+    font-size: xx-large;
+    display: flex;
+    padding-top: 2%;
+}
+nav div{
+    /* width: 30%; */
+    text-align: center;
+}
