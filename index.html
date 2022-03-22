@@ -89,12 +89,28 @@
         </section>
         <section class="newsletter">
             <h3>To stay updated on our latest offers and taste, please subscribe</h3>
-            <input type="text" name="subscribe" id="subscribe">
-            <button type="submit">Subscribe</button>
+            <form action="" name="subscribe" method="post">
+                <input type="text" name="subscribe" id="subscribe" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+        </section>
+        <section id="talk">
+            <form action="" method="post" name="contact">
+                <label for="username">Enter your name: </label>
+                <input type="text" name="username" id="username" required>
+                <label for="email">Enter your Email address: </label>
+                <input type="email" name="email" id="email" required>
+                <label for="comments">Enter your feedback: </label>
+                <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
+                <button type="submit">Send Feedback</button>
+            </form>
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        &copy; 2022. rikonnect Technologies. All Rights Reserved
+    </footer>
 </body>
 
 </html>
