@@ -1,64 +1,88 @@
 /* CSS Reset and universal settings*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a:hover, a:active,a:focus,a{
+
+a:hover,
+a:active,
+a:focus,
+a {
     color: white;
     text-decoration: none;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
 }
 
+.cards-hidden {
+    display: none;
+}
+button{
+    display: block;
+    border-radius: 5px;
+}
+#delivery{
+    display: none;
+}
+
 /* Body */
-body{
+body {
     background-image: url("../assets/background.jpeg");
     background-size: cover;
-    background-position: center,left;
+    background-position: center, left;
     background-repeat: no-repeat;
     color: white;
 }
+
 /* Navbar */
-nav{
+nav {
     font-size: xx-large;
     display: flex;
     padding-top: 2%;
 }
-.col-1{
+
+.col-1 {
     width: 50%;
 }
-.col-2, .col-3{
+
+.col-2,
+.col-3 {
     width: 25%;
 }
-nav div{
+
+nav div {
     text-align: center;
 }
 
 /* Hero cover */
-.hero{
+.hero {
     display: flex;
     margin-top: 3%;
 }
-.hero img{
+
+.hero img {
     width: 30%;
     border-radius: 70%;
 }
-.hero h3{
+
+.hero h3 {
     text-align: center;
     padding: 5%;
     font-size: x-large;
 }
 
 /* Varieties section */
-.cards{
+.cards {
     display: flex;
     /* justify-content: center; */
 }
-.card{
+
+.card {
     margin: 2%;
     padding: 2%;
     width: 30%;
@@ -68,8 +92,47 @@ nav div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-shadow: .2px 2px black;
 }
-.card img{
+
+.card img {
     border-radius: 50%;
-    width: 50%;
+    width: 30%;
+    align-self: center;
+}
+
+/* Order section */
+.order {
+    display: flex;
+    position: relative;
+    left: 20%;
+    font-size: xx-large;
+    width: 60%;
+}
+
+.order img {
+    width: 20%;
+}
+
+form {
+    background-color: grey;
+    width: 80%;
+    padding: 2% 5%;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    /* padding-left: 2%; */
+}
+
+select {
+    width: 80%;
+    height: 10%;
+    border-radius: 5px;
+}
+#submit, #delivery{
+    position: relative;
+    left: 30%;
+    height: 10%;
+    width: 20%;
 }
