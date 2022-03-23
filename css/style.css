@@ -22,11 +22,13 @@ h3 {
 .cards-hidden {
     display: none;
 }
-button{
+
+button {
     display: block;
     border-radius: 5px;
 }
-#delivery{
+
+#delivery {
     display: none;
 }
 
@@ -120,9 +122,9 @@ form {
     padding: 2% 5%;
     border-radius: 5px;
 }
+
 label {
     display: block;
-    /* padding-left: 2%; */
 }
 
 select {
@@ -130,9 +132,37 @@ select {
     height: 10%;
     border-radius: 5px;
 }
-#submit, #delivery{
+
+#submit,
+#delivery {
     position: relative;
     left: 30%;
     height: 10%;
     width: 20%;
+}
+
+/* Newsletter section */
+#newsletter {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+form#subscription {
+    width: 60%;
+    display: flex;
+    align-self: center;
+    background: linear-gradient(to right, grey, black, grey);
+}
+#subscription input{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 2%;
+}
+button#subscribe{
+    width: 20%;
+    margin: 0 2%;
 }
