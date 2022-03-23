@@ -108,14 +108,15 @@
 
         </section>
         <section id="talk">
-            <form action="" method="post" name="contact">
+            <h3>Wanna talk?</h3>
+            <form action="" method="post" name="contact" id="contact">
                 <label for="username">Enter your name: </label>
-                <input type="text" name="username" id="username" required>
+                <input type="text" name="username" id="username" required placeholder="John Doe">
                 <label for="email">Enter your Email address: </label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required placeholder="riko@rikonnect.com">
                 <label for="comments">Enter your feedback: </label>
-                <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
-                <button type="submit">Send Feedback</button>
+                <textarea name="comments" id="comments" rows="5" required placeholder="Feedback..."></textarea>
+                <button type="submit" id="feedback">Send Feedback</button>
             </form>
         </section>
 

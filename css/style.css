@@ -15,7 +15,7 @@ a {
 
 h3 {
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bolder;
 }
 
@@ -108,7 +108,7 @@ nav div {
     display: flex;
     position: relative;
     left: 20%;
-    font-size: xx-large;
+    font-size: x-large;
     width: 60%;
 }
 
@@ -131,6 +131,7 @@ select {
     width: 80%;
     height: 10%;
     border-radius: 5px;
+    margin: 2% 0;
 }
 
 #submit,
@@ -146,8 +147,6 @@ select {
     margin-top: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 
 form#subscription {
@@ -165,4 +164,42 @@ form#subscription {
 button#subscribe{
     width: 20%;
     margin: 0 2%;
+}
+
+/* Contact us section */
+#talk{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+form#contact{
+    width: 60%;
+    align-self: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+#contact input,
+#contact textarea{
+    width: 60%;
+    align-self: center;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+#contact label{
+    position: relative;
+    left: 20%;
+    margin-top: 3%;
+}
+#contact input{
+    height: 30px;
+}
+
+button#feedback{
+    width: 20%;
+    align-self: center;
+    margin-top: 2%;
+    height: 30px;
 }
