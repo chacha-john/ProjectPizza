@@ -203,3 +203,18 @@ button#feedback{
     margin-top: 2%;
     height: 30px;
 }
+
+/* Footer section */
+footer{
+    text-align: center;
+    margin-top: 3%;
+    font-size: small;
+}
+
+/* Salutation */
+#greeting{
+    text-align: center;
+}
+.black{
+    color: black;
+}
