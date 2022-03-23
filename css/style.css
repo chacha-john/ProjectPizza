@@ -8,6 +8,11 @@ a:hover, a:active,a:focus,a{
     color: white;
     text-decoration: none;
 }
+h3{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
 
 /* Body */
 body{
@@ -49,11 +54,22 @@ nav div{
 }
 
 /* Varieties section */
-
-
-.varieties{
+.cards{
     display: flex;
+    /* justify-content: center; */
 }
 .card{
     margin: 2%;
+    padding: 2%;
+    width: 30%;
+    box-shadow: 5px 5px 20px black;
+    font-size: x-large;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card img{
+    border-radius: 50%;
+    width: 50%;
 }
