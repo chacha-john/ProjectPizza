@@ -28,10 +28,12 @@ button {
     border-radius: 5px;
 }
 
-#delivery {
+#delivery, #checkout{
     display: none;
 }
-
+.hidden{
+    display: none !important;
+}
 /* Body */
 body {
     background-image: url("../assets/background.jpeg");
@@ -52,10 +54,6 @@ nav {
     width: 50%;
 }
 
-.col-2,
-.col-3 {
-    width: 25%;
-}
 
 nav div {
     text-align: center;
@@ -67,40 +65,10 @@ nav div {
     margin-top: 3%;
 }
 
-.hero img {
-    width: 30%;
-    border-radius: 70%;
-}
-
 .hero h3 {
     text-align: center;
     padding: 5%;
     font-size: x-large;
-}
-
-/* Varieties section */
-.cards {
-    display: flex;
-    /* justify-content: center; */
-}
-
-.card {
-    margin: 2%;
-    padding: 2%;
-    width: 30%;
-    box-shadow: 5px 5px 20px black;
-    font-size: x-large;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-shadow: .2px 2px black;
-}
-
-.card img {
-    border-radius: 50%;
-    width: 30%;
-    align-self: center;
 }
 
 /* Order section */
@@ -135,6 +103,7 @@ select {
 }
 
 #submit,
+#checkout,
 #delivery {
     position: relative;
     left: 30%;
@@ -166,44 +135,6 @@ button#subscribe{
     margin: 0 2%;
 }
 
-/* Contact us section */
-#talk{
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    display: none;
-}
-form#contact{
-    width: 60%;
-    align-self: center;
-    padding: 3%;
-    display: flex;
-    flex-direction: column;
-}
-#contact input,
-#contact textarea{
-    width: 60%;
-    align-self: center;
-    border-radius: 5px;
-    padding: 1% 2%;
-}
-#contact label{
-    position: relative;
-    left: 20%;
-    margin-top: 3%;
-}
-#contact input{
-    height: 30px;
-}
-
-button#feedback{
-    width: 20%;
-    align-self: center;
-    margin-top: 2%;
-    height: 30px;
-}
-
 /* Footer section */
 footer{
     text-align: center;
@@ -217,7 +148,4 @@ footer{
 }
 .black{
     color: black;
-}
-.hidden{
-    display: none;
 }
