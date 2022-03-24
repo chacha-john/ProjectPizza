@@ -218,3 +218,6 @@ footer{
 .black{
     color: black;
 }
+.hidden{
+    display: none;
+}
