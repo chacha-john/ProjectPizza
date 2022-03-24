@@ -28,42 +28,50 @@
             <div class="order">
                 <img src="assets/form.jpeg" alt="Form Image">
                 <form name="orderForm" id="orderForm">
-                    <label for="typeOfPizza">Type of Pizza</label>
+                    <label class="block" for="typeOfPizza">Type of Pizza</label>
                     <select name="typeOfPizza" id="typeOfPizza" required>
                         <option value="">--</option>
                         <option value="350">Greek Pizza</option>
                         <option value="650">California Pizza</option>
                         <option value="950">Chicago Pizza</option>
                     </select>
-                    <label for="sizeOfPizza">Size of Pizza</label>
+                    <label class="block" for="sizeOfPizza">Size of Pizza</label>
                     <select name="sizeOfPizza" id="sizeOfPizza" required>
                         <option value="">--</option>
                         <option value="300">Small</option>
                         <option value="600">Medium</option>
                         <option value="900">Large</option>
                     </select>
-                    <label for="crust">Crust</label>
+                    <label class="block" for="crust">Crust</label>
                     <select name="crust" id="crust" required>
                         <option value="">--</option>
                         <option value="200">Crispy</option>
                         <option value="350">Stuffed</option>
                         <option value="500">Glutten-free</option>
                     </select>
-                    <label for="toppings">Toppings</label>
-                    Cheese
-                    <input type="radio" name="topping" id="cheese" value="50">
-                    Sauce
-                    <input type="radio" name="topping" id="sauce" value="50">
-                    Mushroom
-                    <input type="radio" name="topping" id="mushroom" value="200">
-                    Pepperoni
-                    <input type="radio" name="topping" id="pepperoni" value="100">
+                    <label class="block">Toppings</label>
+                    <div class="radio">
+                        <label for="cheese">Cheese</label>
+                        <input type="radio" name="topping" id="cheese" value="50">
+                        <label for="sauce">Sauce</label>
+                        <input type="radio" name="topping" id="sauce" value="50">
+                        <label for="mushroom">Mushroom</label>
+                        <input type="radio" name="topping" id="mushroom" value="200">
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="radio" name="topping" id="pepperoni" value="100">
+                    </div>
+
                     <button type="submit" id="submit">Place an order</button>
-                    <button type="submit" id="delivery">Home delivery?</button>
-                    <button type="submit" id="checkout">Checkout</button>
                 </form>
             </div>
+
+        </section>
+        <section id="feedback">
             <div id="output"></div>
+            <div id="control">
+                <button type="submit" id="delivery">Home delivery?</button>
+                <button type="submit" id="checkout">Checkout</button>
+            </div>
         </section>
         <section id="newsletter">
             <h3>Subscribe to our newsletter</h3>
