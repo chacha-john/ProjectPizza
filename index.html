@@ -30,9 +30,9 @@
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ab blanditiis maxime quas dolorem
                 voluptates tenetur reiciendis ipsam velit veritatis.</h3>
         </div>
-        <section id="varieties">
+        <section id="varieties" class="cards-hidden">
             <h3 class="black">Varieties available</h3>
-            <div class="cards">
+            <div class="cards-hidden">
                 <div class="card">
                     <img src="assets/card1.jpeg" alt="Type of Pizza available">
                     <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
@@ -71,29 +71,37 @@
             <h3 class="black">Place an order</h3>
             <div class="order">
                 <img src="assets/form.jpeg" alt="Form Image">
-                <form action="" name="order" method="post">
+                <form name="orderForm" id="orderForm">
+                    <label for="typeOfPizza">Type of Pizza</label>
+                    <select name="typeOfPizza" id="typeOfPizza" required>
+                        <option value="">--</option>
+                        <option value="Greek Pizza">Greek Pizza</option>
+                        <option value="California Pizza">California Pizza</option>
+                        <option value="Chicago Pizza">Chicago Pizza</option>
+                    </select>
                     <label for="sizeOfPizza">Size of Pizza</label>
                     <select name="sizeOfPizza" id="sizeOfPizza" required>
                         <option value="">--</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
+                        <option value="300">Small</option>
+                        <option value="600">Medium</option>
+                        <option value="900">Large</option>
                     </select>
                     <label for="crust">Crust</label>
                     <select name="crust" id="crust" required>
                         <option value="">--</option>
-                        <option value="crispy">Crispy</option>
-                        <option value="stuffed">Stuffed</option>
-                        <option value="gluttenFree">Glutten-free</option>
+                        <option value="200">Crispy</option>
+                        <option value="350">Stuffed</option>
+                        <option value="500">Glutten-free</option>
                     </select>
                     <label for="toppings">Toppings</label>
-                    <select name="toppings" id="toppings" required>
-                        <option value="">--</option>
-                        <option value="cheese">Cheese</option>
-                        <option value="sauce">Sauce</option>
-                        <option value="pepperoni">Pepperoni</option>
-                        <option value="mushroom">Mushroom</option>
-                    </select>
+                    Cheese
+                    <input type="checkbox" name="topping" id="cheese" value="50">
+                    Sauce
+                    <input type="checkbox" name="topping" id="sauce" value="50">
+                    Mushroom
+                    <input type="checkbox" name="topping" id="mushroom" value="200">
+                    Pepperoni
+                    <input type="checkbox" name="topping" id="pepperoni" value="100">
                     <button type="submit" id="submit">Place an order</button>
                     <button type="submit" id="delivery">Home delivery?</button>
                 </form>
@@ -101,15 +109,15 @@
         </section>
         <section id="newsletter">
             <h3>Subscribe to our newsletter</h3>
-            <form action="" name="subscribe" id="subscription" method="post">
-                <input type="text" name="subscribe"  required placeholder="Enter your email address...">
+            <form name="subscribe" id="subscription">
+                <input type="email" name="subscribe"  required placeholder="Enter your email address...">
                 <button type="submit" id="subscribe">Subscribe</button>
             </form>
 
         </section>
         <section id="talk">
             <h3>Wanna talk?</h3>
-            <form action="" method="post" name="contact" id="contact">
+            <form name="contact" id="contact">
                 <label for="username">Enter your name: </label>
                 <input type="text" name="username" id="username" required placeholder="John Doe">
                 <label for="email">Enter your Email address: </label>
@@ -120,7 +128,7 @@
             </form>
         </section>
 
-        <p id="greeting">Thank you for stopping by. Enjoy have a pizzaful day!</p>
+        <p id="greeting">Thank you for stopping by. Enjoy a pizzaful day!</p>
     </main>
     <footer>
         &copy; 2022. rikonnect Technologies. All Rights Reserved
