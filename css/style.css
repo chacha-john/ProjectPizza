@@ -91,7 +91,7 @@ form {
     border-radius: 5px;
 }
 
-label {
+label.block {
     display: block;
 }
 
@@ -107,6 +107,9 @@ select {
     left: 30%;
     height: 10%;
     width: 20%;
+}
+.radio input{
+    margin-right: 2%;
 }
 
 /* Newsletter section */
@@ -158,10 +161,13 @@ footer{
     width: 50%;
     position: relative;
     left: 25%;
+    display: flex;
+    justify-content: center;
 }
 #delivery, #checkout{
-    position: relative;
-    left: 30%;
-    height: 10%;
-    width: 20%;
+    height: 35px;
+    width: 30%;
+    font-size: large;
+    margin: 2%;
+
 }
