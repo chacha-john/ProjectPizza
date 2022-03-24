@@ -16,57 +16,13 @@
                 <h2>Palacio de la Pizza</h2>
                 <h4>Taste the greatness</h4>
             </div>
-            <div class="col-2 hidden">
-                <a href="#about">About Us</a>
-            </div>
-            <div class="col-3 hidden">
-                <a href="#talk">Talk to us?</a>
-            </div>
         </nav>
     </header>
     <main>
         <div class="hero" id="about">
-            <img src="assets/img2.png" alt="Pizza Image">
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ab blanditiis maxime quas dolorem
                 voluptates tenetur reiciendis ipsam velit veritatis.</h3>
         </div>
-        <section id="varieties" class="hidden">
-            <h3 class="black">Varieties available</h3>
-            <div class="cards-hidden">
-                <div class="card">
-                    <img src="assets/card1.jpeg" alt="Type of Pizza available">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
-                        quidem nam obcaecati! Beatae, eveniet?</p>
-                </div>
-                <div class="card">
-                    <img src="assets/card2.jpeg" alt="Type of Pizza available">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
-                        quidem nam obcaecati! Beatae, eveniet?</p>
-                </div>
-                <div class="card">
-                    <img src="assets/card3.jpeg" alt="Type of Pizza available">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
-                        quidem nam obcaecati! Beatae, eveniet?</p>
-                </div>
-            </div>
-            <div class="hidden">
-                <div class="card">
-                    <img src="assets/card4.jpeg" alt="Type of Pizza available">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
-                        quidem nam obcaecati! Beatae, eveniet?</p>
-                </div>
-                <div class="card">
-                    <img src="assets/card5.jpeg" alt="Type of Pizza available">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
-                        quidem nam obcaecati! Beatae, eveniet?</p>
-                </div>
-                <div class="card">
-                    <img src="assets/card6.jpeg" alt="Type of Pizza available">
-                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatem
-                        quidem nam obcaecati! Beatae, eveniet?</p>
-                </div>
-            </div>
-        </section>
         <section id="order">
             <h3 class="black">Place an order</h3>
             <div class="order">
@@ -75,9 +31,9 @@
                     <label for="typeOfPizza">Type of Pizza</label>
                     <select name="typeOfPizza" id="typeOfPizza" required>
                         <option value="">--</option>
-                        <option value="Greek Pizza">Greek Pizza</option>
-                        <option value="California Pizza">California Pizza</option>
-                        <option value="Chicago Pizza">Chicago Pizza</option>
+                        <option value="350">Greek Pizza</option>
+                        <option value="650">California Pizza</option>
+                        <option value="950">Chicago Pizza</option>
                     </select>
                     <label for="sizeOfPizza">Size of Pizza</label>
                     <select name="sizeOfPizza" id="sizeOfPizza" required>
@@ -95,37 +51,27 @@
                     </select>
                     <label for="toppings">Toppings</label>
                     Cheese
-                    <input type="checkbox" name="topping" id="cheese" value="50">
+                    <input type="radio" name="topping" id="cheese" value="50">
                     Sauce
-                    <input type="checkbox" name="topping" id="sauce" value="50">
+                    <input type="radio" name="topping" id="sauce" value="50">
                     Mushroom
-                    <input type="checkbox" name="topping" id="mushroom" value="200">
+                    <input type="radio" name="topping" id="mushroom" value="200">
                     Pepperoni
-                    <input type="checkbox" name="topping" id="pepperoni" value="100">
+                    <input type="radio" name="topping" id="pepperoni" value="100">
                     <button type="submit" id="submit">Place an order</button>
                     <button type="submit" id="delivery">Home delivery?</button>
+                    <button type="submit" id="checkout">Checkout</button>
                 </form>
             </div>
+            <div id="output"></div>
         </section>
         <section id="newsletter">
             <h3>Subscribe to our newsletter</h3>
             <form name="subscribe" id="subscription">
-                <input type="email" name="subscribe"  required placeholder="Enter your email address...">
+                <input type="email" name="subscribe" required placeholder="Enter your email address...">
                 <button type="submit" id="subscribe">Subscribe</button>
             </form>
 
-        </section>
-        <section id="talk">
-            <h3>Wanna talk?</h3>
-            <form name="contact" id="contact">
-                <label for="username">Enter your name: </label>
-                <input type="text" name="username" id="username" required placeholder="John Doe">
-                <label for="email">Enter your Email address: </label>
-                <input type="email" name="email" id="email" required placeholder="riko@rikonnect.com">
-                <label for="comments">Enter your feedback: </label>
-                <textarea name="comments" id="comments" rows="5" required placeholder="Feedback..."></textarea>
-                <button type="submit" id="feedback">Send Feedback</button>
-            </form>
         </section>
 
         <p id="greeting">Thank you for stopping by. Enjoy a pizzaful day!</p>
