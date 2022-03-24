@@ -102,9 +102,7 @@ select {
     margin: 2% 0;
 }
 
-#submit,
-#checkout,
-#delivery {
+#submit{
     position: relative;
     left: 30%;
     height: 10%;
@@ -148,4 +146,22 @@ footer{
 }
 .black{
     color: black;
+}
+
+/* Feedback section */
+#output{
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+}
+#control{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+#delivery, #checkout{
+    position: relative;
+    left: 30%;
+    height: 10%;
+    width: 20%;
 }
