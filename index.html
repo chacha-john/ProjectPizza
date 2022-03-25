@@ -62,15 +62,32 @@
                     </div>
 
                     <button type="submit" id="submit">Place an order</button>
+                    <div id="control">
+                        <button type="submit" id="newOrder">Add Order</button>
+                        <button type="submit" id="delivery">Home delivery?</button>
+                        <button type="submit" id="checkout">Checkout</button>
+                    </div>
                 </form>
             </div>
 
         </section>
         <section id="feedback">
             <div id="output"></div>
-            <div id="control">
+            <!-- <div id="control">
                 <button type="submit" id="delivery">Home delivery?</button>
                 <button type="submit" id="checkout">Checkout</button>
+            </div> -->
+            <div class="location">
+                <form name="location" id="location">
+                    <h3>Fill in your details for delivery</h3>
+                    <label for="username" class="block">Name</label>
+                    <input type="text" name="username" id="username" required placeholder="John Doe">
+                    <label for="residence" class="block">Where do you want it delivered?</label>
+                    <input type="text" name="residence" id="residence" required placeholder="Hunters, Kasarani">
+                    <label for="phoneNumber" class="block">Phone Number: </label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" required placeholder="0722 - 222 - 222">
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
         <section id="newsletter">
