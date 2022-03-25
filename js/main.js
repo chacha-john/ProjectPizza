@@ -17,10 +17,16 @@ orderData.addEventListener("submit",(e)=>{
     let pizzaToppings = orderData.topping.value
     
     let order = new Order(pizzaType, pizzaCrust,pizzaSize,pizzaToppings)
-    // document.querySelector("#output").textContent = "Your total cost is Sh. " + order.total
     document.querySelector("#submit").style.display = "none"
     document.querySelector("#control").style.display = "flex"
     
+    document.querySelector("#checkout").addEventListener("click",(e)=>{
+        e.preventDefault()
+        prompt = "Thank you for shopping with us! Your total cost is Sh. " + order.total + ". Please visit our store within 12 hours to collect your order!"
+        document.querySelector("#order").style.display = "none"
+        document.querySelector("#output").textContent = prompt
+    
+    })
 })
 
 deliveryDetails.addEventListener("submit",(e)=>{
@@ -36,5 +42,10 @@ deliveryDetails.addEventListener("submit",(e)=>{
 document.querySelector("#delivery").addEventListener("click",(e)=>{
     document.querySelector("form#location").style.display = "block"
     document.querySelector("#order").style.display = "none"
+
+})
+document.querySelector("#checkout").addEventListener("click",(e)=>{
+    e.preventDefault()
+    document.querySelector("#output").textContent = "Your total cost is Sh. " + order.total
 
 })
