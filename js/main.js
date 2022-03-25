@@ -1,4 +1,5 @@
 let orderData = document.querySelector("form#orderForm")
+let deliveryDetails = document.querySelector("form#location")
 let orders = []
 
 function Order(pizzaType, pizzaCrust,pizzaSize,pizzaToppings){
@@ -16,9 +17,24 @@ orderData.addEventListener("submit",(e)=>{
     let pizzaToppings = orderData.topping.value
     
     let order = new Order(pizzaType, pizzaCrust,pizzaSize,pizzaToppings)
-    document.querySelector("#output").textContent = "Your total cost is Sh. " + order.total
-    document.querySelector("#order").style.display = "none"
-    document.querySelector("#checkout").style.display = "block"
-    document.querySelector("#delivery").style.display = "block"
+    // document.querySelector("#output").textContent = "Your total cost is Sh. " + order.total
+    document.querySelector("#submit").style.display = "none"
+    document.querySelector("#control").style.display = "flex"
     
+})
+
+deliveryDetails.addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    let username = deliveryDetails.username.value
+    let residence = deliveryDetails.residence.value
+
+    prompt = "Thank you for shopping with us, " + username +"! Your delivery will be made at " + residence + " within 12 hours!"
+    alert(prompt)
+})
+
+document.querySelector("#delivery").addEventListener("click",(e)=>{
+    document.querySelector("form#location").style.display = "block"
+    document.querySelector("#order").style.display = "none"
+
 })
