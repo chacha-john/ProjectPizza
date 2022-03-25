@@ -80,6 +80,9 @@ nav div {
 .order img {
     width: 20%;
 }
+form#orderForm{
+    padding-bottom: 2%;
+}
 
 form {
     background-color: grey;
@@ -196,4 +199,7 @@ form#location{
     left: 30%;
     height: 30px;
     width: 20%;
+ }
+ .cost{
+     text-align: center;
  }

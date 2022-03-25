@@ -1,7 +1,7 @@
 let orderData = document.querySelector("form#orderForm")
 let deliveryDetails = document.querySelector("form#location")
 let orders = []
-
+let overallcost
 function Order(pizzaType, pizzaCrust,pizzaSize,pizzaToppings){
     this.pizzaType = pizzaType
     this.pizzaCrust = pizzaCrust
@@ -17,12 +17,21 @@ orderData.addEventListener("submit",(e)=>{
     let pizzaToppings = orderData.topping.value
     
     let order = new Order(pizzaType, pizzaCrust,pizzaSize,pizzaToppings)
-    document.querySelector("#submit").style.display = "none"
-    document.querySelector("#control").style.display = "flex"
     
+    orders.push(order.total)
+    
+    findTotal = (total,num)=>{
+        return total + num
+    }
+    overallcost = orders.reduce(findTotal,0);
+    
+    document.querySelector("#submit").style.display = "none"
+    document.querySelector(".cost").textContent = "Your order goes at Sh. " + overallcost
+    document.querySelector("#control").style.display = "flex"
+
     document.querySelector("#checkout").addEventListener("click",(e)=>{
         e.preventDefault()
-        prompt = "Thank you for shopping with us! Your total cost is Sh. " + order.total + ". Please visit our store within 12 hours to collect your order!"
+        prompt = "Thank you for shopping with us! Your total cost is Sh. " + overallcost + ". Please visit our store within 12 hours to collect your order!"
         document.querySelector("#order").style.display = "none"
         document.querySelector("#output").textContent = prompt
     
@@ -35,7 +44,7 @@ deliveryDetails.addEventListener("submit",(e)=>{
     let username = deliveryDetails.username.value
     let residence = deliveryDetails.residence.value
 
-    prompt = "Thank you for shopping with us, " + username +"! Your delivery will be made at " + residence + " within 12 hours!"
+    prompt = "Thank you for shopping with us, " + username +"! Your total cost is Sh. " + overallcost + ". Your delivery will be made at " + residence + " within 12 hours!"
     alert(prompt)
 })
 
