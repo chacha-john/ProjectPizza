@@ -28,9 +28,6 @@ button {
     border-radius: 5px;
 }
 
-#delivery, #checkout{
-    display: none;
-}
 .hidden{
     display: none !important;
 }
@@ -158,16 +155,45 @@ footer{
     color: black;
 }
 #control{
-    width: 50%;
+    width: 60%;
     position: relative;
-    left: 25%;
+    left: 10%;
     display: flex;
     justify-content: center;
+    display: none;
 }
-#delivery, #checkout{
-    height: 35px;
+#delivery, #checkout, #newOrder{
+    height: 40px;
     width: 30%;
     font-size: large;
     margin: 2%;
 
 }
+
+/* delivery form */
+form#location{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    align-content: center;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    display: none;
+}
+
+#location input{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    margin: 2% 0;
+    padding: 0 1%;
+}
+ .location form button{
+    position: relative;
+    left: 30%;
+    height: 30px;
+    width: 20%;
+ }
