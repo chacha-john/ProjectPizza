@@ -36,6 +36,10 @@ document.querySelector("#checkout").addEventListener("click",(e)=>{
     prompt = "Thank you for shopping with us! Your total cost is Sh. " + overallcost + ". Please visit our store within 12 hours to collect your order!"
     document.querySelector("#order").style.display = "none"
     document.querySelector("#output").textContent = prompt
+    document.querySelector("#reviews").style.display = "none"
+    document.querySelector("#about").style.display = "none"
+
+
 
 })
 let deliveryDetails = document.querySelector("form#location")
@@ -58,5 +62,8 @@ document.querySelector("#delivery").addEventListener("click",(e)=>{
     e.preventDefault()
     document.querySelector("form#location").style.display = "block"
     document.querySelector("#order").style.display = "none"
+    document.querySelector("#reviews").style.display = "none"
+    document.querySelector("#about").style.display = "none"
+
 
 })
