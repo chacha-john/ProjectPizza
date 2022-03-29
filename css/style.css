@@ -47,7 +47,7 @@ nav {
 }
 
 .col-1 {
-    width: 40%;
+    width: 100%;
 }
 
 
@@ -101,6 +101,7 @@ form {
     width: 80%;
     padding: 2% 5%;
     border-radius: 5px;
+    height: max-content;
 }
 
 label.block {
@@ -274,4 +275,96 @@ form#location {
 }
 .shadow{
     text-shadow: 2px 2px black;
+}
+@media screen and (max-width:1100px) {
+    form {
+        width: max-content;
+    }
+
+    .location form button {
+        position: relative;
+        left: 30%;
+        height: 30px;
+        width: 20%;
+    }
+    #control {
+        width: 60%;
+        position: relative;
+        left: 10%;
+        justify-content: center;
+        display: none;
+    }
+    #delivery,
+    #checkout,
+    #newOrder {
+        display: block;
+        height: unset;
+        width: 50%;
+        margin: 2%;
+        font-size: medium;
+        padding: 2%;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .card{
+        width: 60%;
+        margin: 5% 0;
+        position: relative;
+        left: 15%;
+    }
+    .cards{
+        display: block;
+    }
+    .order img{
+        display: none;
+    }
+    form#orderForm {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    label{
+        font-size: medium;
+    }
+    #control{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    form#orderForm button{
+        width: 100%;
+        display: unset;
+    }
+    button#subscribe {
+        width: 40%;
+        margin: 0 2%;
+    }
+    .hero h3{
+        font-size: large;
+    }
+    .col-1{
+        padding: 1% 2%;
+    }
+    form#orderForm button#submit{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .col-1{
+        font-size: large;
+    }
+    form#subscription{
+        display: block;
+    }
+    form#subscription input{
+        width: 100%;
+    }
+    #subscribe{
+        position: relative;
+        left: 25%;
+    }
+    .card{
+        width: 80%;
+        position: relative;
+        left: 7.5%;
+    }
 }
